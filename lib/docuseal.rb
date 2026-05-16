@@ -116,7 +116,7 @@ module Docuseal
   end
 
   def product_name
-    PRODUCT_NAME
+    ENV.fetch('PRODUCT_NAME', PRODUCT_NAME)
   end
 
   def refresh_default_url_options!
